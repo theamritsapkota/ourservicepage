@@ -1,0 +1,72 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.content{
+    width: 100%;
+    height: 200vh;
+    padding: 0 5%;
+}
+.content h1{
+    font: 100;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-top: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content h1::after{
+    content: "";
+    width: 270px;
+    height: 6px;
+    position: absolute;
+    background-color: blue;
+    bottom: -5px;
+    transform: translate(-50%);
+    left: 50%;
+}
+.service{
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    gap: 3px;
+    padding: 3px 4px 4px;
+    cursor: pointer;
+    border-radius: 70px;
+
+}
+p{
+    padding-bottom: 40px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.service i{
+    font-size: 50px;
+    padding-top: 4px;
+    color: rgb(3, 39, 182);
+}
+.service i:hover{
+    font-size: 70px;
+    padding-top: 3px;
+    color: rgb(228, 228, 228);
+}
+.service:hover{
+    background-color: rgba(0, 0, 255, 0.848);
+    color: white;
+    font-size: 35px;
+    transition: all 0.5s  ease-in-out;
+    
+}
+.include{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
